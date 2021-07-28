@@ -13,7 +13,6 @@ class ApiPermission extends CoCreatePermission {
   
   initEvent() {
     const self = this;
-    console.log('yyyyy')
     crud.listen('updateDocument', (data) => self.refreshPermission(data))
     crud.listen('createDocument', (data) => self.refreshPermission(data))
     crud.listen('deleteDocument', (data) => self.refreshPermission(data))
@@ -28,14 +27,15 @@ class ApiPermission extends CoCreatePermission {
   }
   
   getParameters(action, data) {
-    const { data: {apiKey, organization_id, collection, securityKey, doucment_id}, type } = data;
+    const { data: {apiKey, organization_id, collection, securityKey, doucment_id, name}, type } = data;
     return {
 			apikey: apiKey,
 			organization_id,
 			collection: null,
 			plugin: action,
 			type,
-			doucment_id
+			doucment_id,
+			name
     }
   }
   
