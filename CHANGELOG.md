@@ -1,3 +1,10 @@
+## [1.1.27](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.26...v1.1.27) (2021-07-28)
+
+
+### Bug Fixes
+
+* removed data- from crud, fetch, filter and pass attributes ([2d8d999](https://github.com/CoCreate-app/CoCreateApi/commit/2d8d999dc49f7afbed06911786576fc6bb6b518c))
+
 ## [1.1.26](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.25...v1.1.26) (2021-06-23)
 
 
