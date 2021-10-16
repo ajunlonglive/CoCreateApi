@@ -56,8 +56,7 @@ class ApiPermission extends CoCreatePermission {
         host: socket_config.host
       })
       
-      let eventPermission = "getPermissionEvent";
-      crud.readDocumentList({
+      let response = await crud.readDocumentList({
         collection: "permissions",
         operator: {
           filters: [{
@@ -66,16 +65,14 @@ class ApiPermission extends CoCreatePermission {
             value: [key]
           }],
         },
-        event: eventPermission,
         apiKey: socket_config["config"]["apiKey"],
-        securityKey: socket_config["config"]["securityKey"],
         organization_id: socket_config["config"]["organization_id"]
       });
       
       console.log('ready data')
       
       
-      let response = await crud.listenAsync(eventPermission);
+      // let response = await crud.listenAsync(eventPermission);
       // console.log(response.data[0])
       return (response && response.data != null) ?  response.data[0] : null;
     } catch (err) {
