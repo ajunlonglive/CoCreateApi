@@ -1,3 +1,10 @@
+## [1.1.28](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.27...v1.1.28) (2021-10-16)
+
+
+### Bug Fixes
+
+* update to use new await crud.xxx ([0a207cf](https://github.com/CoCreate-app/CoCreateApi/commit/0a207cfb52ed73fee5554a8e1eb7f74ee48068ff))
+
 ## [1.1.27](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.26...v1.1.27) (2021-07-28)
 
 
