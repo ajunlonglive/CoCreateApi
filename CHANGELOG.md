@@ -1,3 +1,11 @@
+## [1.1.30](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.29...v1.1.30) (2021-11-11)
+
+
+### Bug Fixes
+
+* licensing information ([429638c](https://github.com/CoCreate-app/CoCreateApi/commit/429638c77007d250fb9660d75c2e7fd765bffb95))
+* update readme ([7e54dba](https://github.com/CoCreate-app/CoCreateApi/commit/7e54dba384e2953ebbf337fa7f4ddabb31fe679e))
+
 ## [1.1.29](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.28...v1.1.29) (2021-11-11)
 
 
