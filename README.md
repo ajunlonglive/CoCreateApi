@@ -46,5 +46,13 @@ CoCreate-CoCreateApi is maintained and funded by CoCreate. The names and logos f
 
 We encourage contribution to our libraries (you might even score some nifty swag), please see our [CONTRIBUTING](https://github.com/CoCreate-app/CoCreate-CoCreateApi/blob/master/CONTRIBUTING.md) guide for details.
 
-# License
+# Dual License
+## Open Source
 [Server Side Public License (SSPL)](https://github.com/CoCreate-app/CoCreate-CoCreateApi/blob/master/LICENSE)
+
+## Commercial
+The commercial license is designed for you to use CoCreateApi in commercial 
+products and applications, without the provisions of the SSPL. With the 
+commercial license, your code is kept propietary, to yourself. If you 
+want to use CoCreateApi to develop commercial sites, themes, projects, and 
+applications, the commercial license is the appropriate license.
