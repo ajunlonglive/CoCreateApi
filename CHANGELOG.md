@@ -1,3 +1,10 @@
+## [1.1.31](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.30...v1.1.31) (2021-11-13)
+
+
+### Bug Fixes
+
+* update /k8s to/manifests ([c1cf669](https://github.com/CoCreate-app/CoCreateApi/commit/c1cf6693a3ab14f244d7c9ffacf4f2229ebaab30))
+
 ## [1.1.30](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.29...v1.1.30) (2021-11-11)
 
 
