@@ -1,3 +1,10 @@
+## [1.1.32](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.31...v1.1.32) (2021-11-13)
+
+
+### Bug Fixes
+
+* update secert name ([8c9ca50](https://github.com/CoCreate-app/CoCreateApi/commit/8c9ca50081b90460b36d6fd549b47e24aaca273a))
+
 ## [1.1.31](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.30...v1.1.31) (2021-11-13)
 
 
