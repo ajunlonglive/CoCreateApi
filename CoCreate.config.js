@@ -1,47 +1,27 @@
 module.exports = {
-    config: {
-        organization_id:"5ae0cfac6fb8c4e656fdaf92",
-        apiKey:"38ffd014-c33b-4202-c54b-ac46a0a4",
-        securityKey:"69faeace-b065-4c87-b880-22c2f0f3",
-        host: "server.cocreate.app:8088"
+    "config": {
+        "apiKey": "2061acef-0451-4545-f754-60cf8160",
+        "organization_Id": "5ff747727005da1c272740ab",
+        "host": "general.cocreate.app"
     },
- 
-    sources: [{
-            path: "./docs/index.html",
-            collection: "files",
-            document_id: "",
-            key: "html",
-            data:{
-                name: "CoCreateApi Doc",
-            }
-        },
-    ],
-   
-    crud: [{
-            collection: "routes",
-            document_id: "",
-            data:{
-                collection: "files",
-                document_id: "",
-                name: "html",
-                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/CoCreateApi",
+    "sources": [
+        {
+            "entry": "./docs/index.html",
+            "collection": "files",
+            "document_id": "6204206980b409001727b6e8",
+            "key": "src",
+            "data": {
+                "name": "index.html",
+                "path": "/docs/CoCreateAPI/index.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "directory": "/docs/CoCreateAPI",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         }
-    ],
-    
-    extract: {
-        directory: "./src/",
-        extensions: [
-            "js",
-            "css",
-            "html"
-        ],
-        ignores: [
-            "node_modules",
-            "vendor",
-            "bower_components",
-            "archive"
-        ],
-    }
+    ]
 }

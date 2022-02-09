@@ -39,7 +39,7 @@
   "dependencies": {
     "@cocreate/api": "latest",
     "@cocreate/crud-client": "latest",
-    "@cocreate/docs": "latest",
+    "@cocreate/docs": "^1.2.68",
     "@cocreate/domain": "latest",
     "@cocreate/facebook": "latest",
     "@cocreate/google-auth": "latest",
