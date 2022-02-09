@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.32...v1.1.33) (2022-02-09)
+
+
+### Bug Fixes
+
+* update CoCreate.config.js, bump @cocreate/docs version ([fb70ab6](https://github.com/CoCreate-app/CoCreateApi/commit/fb70ab6162b828209625fd94441ac519e7cf62ef))
+
 ## [1.1.32](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.31...v1.1.32) (2021-11-13)
 
 
