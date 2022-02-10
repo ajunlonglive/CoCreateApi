@@ -44,11 +44,10 @@ class ApiPermission extends CoCreatePermission {
       const socket_config = { 
         "config": {
           "apiKey": key,
-          "securityKey": 'testing',
           "organization_id": organization_id,
         },
         "prefix": "ws",
-        "host": "server.cocreate.app:8088"
+        "host": "server.cocreate.app"
       }
       socket.create({
         namespace: socket_config.config.organization_id,

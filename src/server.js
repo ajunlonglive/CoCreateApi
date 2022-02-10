@@ -11,7 +11,7 @@ const wsManager = new SocketServer('api');
 
 const app = express();
 app.use(cors())
-const port = process.env.PORT || 8082;
+const port = process.env.PORT || 3002;
 
 app.use(urlencoded({ extended: false }));
 app.use(express.static('public'));
@@ -36,5 +36,5 @@ server.on('upgrade', function upgrade(request, socket, head) {
 
 
 server.listen(port, () => {
-  console.log('Example app listening at http://localhost:3002')
+  console.log('API listening at http://localhost:3002')
 });
