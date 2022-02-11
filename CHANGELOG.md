@@ -1,3 +1,11 @@
+## [1.1.34](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.33...v1.1.34) (2022-02-11)
+
+
+### Bug Fixes
+
+* get host from socketmessage ([cbfcf78](https://github.com/CoCreate-app/CoCreateApi/commit/cbfcf781bcc0bb5118476476e034fb3ec7e82e59))
+* update port 3002 ([df8792f](https://github.com/CoCreate-app/CoCreateApi/commit/df8792f4786fb7d28775759bce88421b55d3b29e))
+
 ## [1.1.33](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.32...v1.1.33) (2022-02-09)
 
 
