@@ -6,8 +6,8 @@ const init = require("./init")
 
 
 const urlencoded = require('body-parser').urlencoded;
-const SocketServer = require("@cocreate/socket-server")
-const wsManager = new SocketServer('api');
+const socketServer = require("@cocreate/socket-server")
+const wsManager = new socketServer('api');
 
 const app = express();
 app.use(cors())
@@ -36,5 +36,5 @@ server.on('upgrade', function upgrade(request, socket, head) {
 
 
 server.listen(port, () => {
-  console.log('API listening at http://localhost:3002')
+  console.log('API listening at http://localhost:', port)
 });

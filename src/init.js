@@ -1,4 +1,3 @@
-
 const config = require('../CoCreate.config.js');
 
  const CoCreateDomain = require('@cocreate/domain');

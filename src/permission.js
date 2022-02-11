@@ -1,8 +1,8 @@
 const CoCreatePermission = require('@cocreate/permissions');
 const crud = require('@cocreate/crud-client');
 
-const CoCreateSocketClient = require('@cocreate/socket-client')
-let socket = new CoCreateSocketClient("ws");
+const socketClient = require('@cocreate/socket-client')
+let socket = new socketClient("ws");
 crud.setSocket(socket);
 
 class ApiPermission extends CoCreatePermission {
@@ -19,6 +19,7 @@ class ApiPermission extends CoCreatePermission {
   }
   
   async refreshPermission(data) {
+    console.log('permisions Refresh', data)
     const {collection, document_id, organization_id, data : permissionData } = data
     if (collection === 'permissions' && this.hasPermission(permissionData.key)) {
       let new_permission = await this.getPermissionObject(permissionData.key, organization_id)
@@ -27,10 +28,11 @@ class ApiPermission extends CoCreatePermission {
   }
   
   getParameters(action, data) {
-    const { data: {apiKey, organization_id, collection, securityKey, doucment_id, name}, type } = data;
+    const { data: {apiKey, organization_id, host, collection, doucment_id, name}, type } = data;
     return {
 			apikey: apiKey,
 			organization_id,
+      host,
 			collection: null,
 			plugin: action,
 			type,
@@ -39,20 +41,12 @@ class ApiPermission extends CoCreatePermission {
     }
   }
   
-  async getPermissionObject(key, organization_id) {
+  async getPermissionObject(key, organization_id, type, host) {
     try {
-      const socket_config = { 
-        "config": {
-          "apiKey": key,
-          "organization_id": organization_id,
-        },
-        "prefix": "ws",
-        "host": "server.cocreate.app"
-      }
       socket.create({
-        namespace: socket_config.config.organization_id,
+        namespace: organization_id,
         room: null,
-        host: socket_config.host
+        host
       })
       
       let response = await crud.readDocumentList({
@@ -64,14 +58,12 @@ class ApiPermission extends CoCreatePermission {
             value: [key]
           }],
         },
-        apiKey: socket_config["config"]["apiKey"],
-        organization_id: socket_config["config"]["organization_id"]
+        apiKey: key,
+        organization_id: organization_id
       });
       
-      console.log('ready data')
+      console.log('Permissions Ready')
       
-      
-      // let response = await crud.listenAsync(eventPermission);
       // console.log(response.data[0])
       return (response && response.data != null) ?  response.data[0] : null;
     } catch (err) {
