@@ -23,7 +23,6 @@ app.post('/api_/hello', (req, res) => {
 
 // app.use('/api_/twilio', require('./plugins/twilio/routes'));
 
-
 init.WSManager(wsManager);
 
 const server = createServer(app);
@@ -34,7 +33,6 @@ server.on('upgrade', function upgrade(request, socket, head) {
   }
 });
 
-
 server.listen(port, () => {
-  console.log('API listening at http://localhost:', port)
+  console.log('API listening at http://localhost:'+port)
 });

@@ -19,28 +19,13 @@ class ApiPermission extends CoCreatePermission {
   }
   
   async refreshPermission(data) {
-    console.log('permisions Refresh', data)
     const {collection, document_id, organization_id, data : permissionData } = data
     if (collection === 'permissions' && this.hasPermission(permissionData.key)) {
       let new_permission = await this.getPermissionObject(permissionData.key, organization_id)
       this.setPermissionObject(permissionData.key, new_permission)
     }
   }
-  
-  getParameters(action, data) {
-    const { data: {apiKey, organization_id, host, collection, doucment_id, name}, type } = data;
-    return {
-			apikey: apiKey,
-			organization_id,
-      host,
-			collection: null,
-			plugin: action,
-			type,
-			doucment_id,
-			name
-    }
-  }
-  
+    
   async getPermissionObject(key, organization_id, type, host) {
     try {
       socket.create({
@@ -62,9 +47,7 @@ class ApiPermission extends CoCreatePermission {
         organization_id: organization_id
       });
       
-      console.log('Permissions Ready')
-      
-      // console.log(response.data[0])
+      // console.log('Permissions Ready', response)
       return (response && response.data != null) ?  response.data[0] : null;
     } catch (err) {
       console.log(err)
