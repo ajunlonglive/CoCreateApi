@@ -38,6 +38,7 @@
   "homepage": "https://cocreate.app/docs/CoCreateApi",
   "dependencies": {
     "@cocreate/api": "latest",
+    "@cocreate/auth": "^1.0.11",
     "@cocreate/crud-client": "latest",
     "@cocreate/docs": "latest",
     "@cocreate/domain": "latest",

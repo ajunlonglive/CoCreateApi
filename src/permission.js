@@ -26,15 +26,14 @@ class ApiPermission extends CoCreatePermission {
     }
   }
     
-  async getPermissionObject(key, organization_id, type, host) {
+  async getPermissionObject(key, organization_id, type, host, apiKey) {
     try {
       socket.create({
         namespace: organization_id,
         room: null,
         host
       })
-      
-      let response = await crud.readDocumentList({
+      let data = await crud.readDocumentList({
         collection: "permissions",
         operator: {
           filters: [{
@@ -43,12 +42,30 @@ class ApiPermission extends CoCreatePermission {
             value: [key]
           }],
         },
-        apiKey: key,
+        apiKey: apiKey,
         organization_id: organization_id
       });
+
+      let permission = data.data[0]
+      let roles = []
+      if (permission && permission.roles) {
+        for (let role_id of permission.roles){
+          let role = await crud.readDocument({
+            collection: "permissions",
+            document_id: role_id,
+            apiKey: apiKey,
+            organization_id: organization_id,
+          });
+
+          if (role.data)
+            roles.push(role.data)
+        }
+
+        if (roles.length > 0)
+          permission = this.createPermissionObject(permission, roles)
+      }
       
-      // console.log('Permissions Ready', response)
-      return (response && response.data != null) ?  response.data[0] : null;
+      return permission
     } catch (err) {
       console.log(err)
       return  null;

@@ -16,6 +16,7 @@ const CoCreateStripe = require('@cocreate/stripe');
 const CoCreateTwitter = require('@cocreate/twitter');
 // const CoCreateXXX = require('@cocreate/xxx');
 const ApiPermission = require("./permission.js")
+const CoCreateAuth = require('@cocreate/auth')
 
 module.exports.WSManager = function(manager) {
 	 new CoCreatePinterest(manager);
@@ -35,4 +36,7 @@ module.exports.WSManager = function(manager) {
 	// new CoCreateXXX(manager);
 	const permission = new ApiPermission();
 	manager.setPermission(permission)
+	const auth = new CoCreateAuth(config.jwttoken)
+	manager.setAuth(auth)
+
 }

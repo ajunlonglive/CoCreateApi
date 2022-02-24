@@ -4,6 +4,14 @@ module.exports = {
         "organization_Id": "5ff747727005da1c272740ab",
         "host": "general.cocreate.app"
     },
+    jwttoken: {
+        key: process.env.JWT_KEY || 'aaIbx6W0366Mm6NXrPQb1k3Hg3sRxd1B',
+        options: {
+            algorithm: "HS256",
+            expiresIn: "2 days",
+            issuer: "issuer"
+        }
+    },
     "sources": [
         {
             "entry": "./docs/index.html",
