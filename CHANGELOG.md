@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.0...v1.2.1) (2022-02-25)
+
+
+### Bug Fixes
+
+* comment ingress yaml as it is blocking LB ingress rules ([fc79eb2](https://github.com/CoCreate-app/CoCreateApi/commit/fc79eb2f1f72893b50be5ed18c840709709ab304))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.34...v1.2.0) (2022-02-25)
 
 
