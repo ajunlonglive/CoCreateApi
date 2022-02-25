@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.34...v1.2.0) (2022-02-25)
+
+
+### Bug Fixes
+
+* removed getParameters ([203bb48](https://github.com/CoCreate-app/CoCreateApi/commit/203bb48e98f8b95fdb2d68c3e0cc7ea0ae0ee21a))
+* wildcard * to allow all domains ([da256ab](https://github.com/CoCreate-app/CoCreateApi/commit/da256ab370de506b8432ca198a3c8c736b7c5866))
+
+
+### Features
+
+* support for user auth and permissions ([749ebc9](https://github.com/CoCreate-app/CoCreateApi/commit/749ebc9e4c9e4f28b45572a68208fcad82c61ed4))
+
 ## [1.1.34](https://github.com/CoCreate-app/CoCreateApi/compare/v1.1.33...v1.1.34) (2022-02-11)
 
 
