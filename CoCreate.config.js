@@ -22,7 +22,7 @@ module.exports = {
                 "name": "index.html",
                 "path": "/docs/CoCreateAPI/index.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "directory": "/docs/CoCreateAPI",
