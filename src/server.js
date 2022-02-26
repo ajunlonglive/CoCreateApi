@@ -14,12 +14,7 @@ app.use(cors())
 const port = process.env.PORT || 3002;
 
 app.use(urlencoded({ extended: false }));
-app.use(express.static('public'));
-
-app.post('/api_/hello', (req, res) => {
-  console.log('connected')
-  res.send('Hello World');
-})
+// app.use(express.static('public'));
 
 // app.use('/api_/twilio', require('./plugins/twilio/routes'));
 
@@ -33,6 +28,4 @@ server.on('upgrade', function upgrade(request, socket, head) {
   }
 });
 
-server.listen(port, () => {
-  console.log('API listening at http://localhost:'+port)
-});
+server.listen(port);
