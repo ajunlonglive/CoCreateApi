@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.1...v1.2.2) (2022-02-25)
+
+
+### Bug Fixes
+
+* added ingress.yaml ([12e0699](https://github.com/CoCreate-app/CoCreateApi/commit/12e0699a9ccb48aac95d120c605bcdb72319e37b))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.0...v1.2.1) (2022-02-25)
 
 
