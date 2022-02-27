@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.4...v1.2.5) (2022-02-27)
+
+
+### Bug Fixes
+
+* update CoCreate.config ([500b99a](https://github.com/CoCreate-app/CoCreateApi/commit/500b99ab444225cd890c761fbcd34d430d5bac13))
+
 ## [1.2.4](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.3...v1.2.4) (2022-02-27)
 
 
