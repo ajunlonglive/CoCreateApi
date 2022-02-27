@@ -18,25 +18,25 @@ const CoCreateTwitter = require('@cocreate/twitter');
 const ApiPermission = require("./permission.js")
 const CoCreateAuth = require('@cocreate/auth')
 
-module.exports.WSManager = function(manager) {
-	 new CoCreatePinterest(manager);
-	 new CoCreateDomain(manager);
-	// new CoCreateEmail(manager);
-	// new CoCreateFacebook(manager);
-	new CoCreateGoogleAuth(manager);
-	new CoCreateInstagram(manager);
-	new CoCreateLightHouse(manager);
-	new CoCreateLinkedin(manager)
-	new CoCreatePlaid(manager);
-	new CoCreateSendGrid(manager);
-	new CoCreateShipengine(manager);
-	new CoCreateStripe(manager);
-	// new CoCreateTwilio(manager, config);
-	new CoCreateTwitter(manager);
-	// new CoCreateXXX(manager);
+module.exports.init = function(wsManager) {
+	new CoCreatePinterest(wsManager);
+	new CoCreateDomain(wsManager);
+	// new CoCreateEmail(wsManager);
+	// new CoCreateFacebook(wsManager);
+	new CoCreateGoogleAuth(wsManager);
+	new CoCreateInstagram(wsManager);
+	new CoCreateLightHouse(wsManager);
+	new CoCreateLinkedin(wsManager)
+	new CoCreatePlaid(wsManager);
+	new CoCreateSendGrid(wsManager);
+	new CoCreateShipengine(wsManager);
+	new CoCreateStripe(wsManager);
+	// new CoCreateTwilio(wsManager, config);
+	new CoCreateTwitter(wsManager);
+	// new CoCreateXXX(wsManager);
 	const permission = new ApiPermission();
-	manager.setPermission(permission)
+	wsManager.setPermission(permission)
 	const auth = new CoCreateAuth(config.jwttoken)
-	manager.setAuth(auth)
+	wsManager.setAuth(auth)
 
 }
