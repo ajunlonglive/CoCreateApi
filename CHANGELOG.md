@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.3...v1.2.4) (2022-02-27)
+
+
+### Bug Fixes
+
+* clean code updated init.js to component.js ([e6c1a44](https://github.com/CoCreate-app/CoCreateApi/commit/e6c1a44cc1ad9283977f3d196efc02d676e736d2))
+
 ## [1.2.3](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.2...v1.2.3) (2022-02-26)
 
 
