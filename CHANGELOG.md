@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.2...v1.2.3) (2022-02-26)
+
+
+### Bug Fixes
+
+* remove dead from server.js ([a0110b5](https://github.com/CoCreate-app/CoCreateApi/commit/a0110b57674c5aa4dab60ae7210a9bb096a684e6))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.1...v1.2.2) (2022-02-25)
 
 
