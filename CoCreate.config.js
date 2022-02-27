@@ -5,7 +5,7 @@ module.exports = {
         "host": "general.cocreate.app"
     },
     jwttoken: {
-        key: process.env.JWT_KEY || '<jwt token>',
+        key: process.env.JWT_KEY || '<JWT Token>',
         options: {
             algorithm: "HS256",
             expiresIn: "2 days",
