@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.6...v1.2.7) (2022-02-28)
+
+
+### Bug Fixes
+
+* syntax error in @cocreate/google-auth ([47c485c](https://github.com/CoCreate-app/CoCreateApi/commit/47c485c2d4d44b58ce212927d6e054b505672b64))
+
 ## [1.2.6](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.5...v1.2.6) (2022-02-28)
 
 
