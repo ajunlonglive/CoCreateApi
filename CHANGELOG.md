@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.7...v1.2.8) (2022-02-28)
+
+
+### Bug Fixes
+
+* syntax error with @cocreate/linkedin ([686946a](https://github.com/CoCreate-app/CoCreateApi/commit/686946aa4c03060f65d9bb457dcb7a6572403007))
+
 ## [1.2.7](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.6...v1.2.7) (2022-02-28)
 
 
