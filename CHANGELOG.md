@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.9...v1.2.10) (2022-03-03)
+
+
+### Bug Fixes
+
+* update secertname to gtihub-packages. add dev deployment ([210dcf7](https://github.com/CoCreate-app/CoCreateApi/commit/210dcf7a8757a4f854991c13a8238d9c151d2c5e))
+
 ## [1.2.9](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.8...v1.2.9) (2022-02-28)
 
 
