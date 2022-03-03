@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.8...v1.2.9) (2022-02-28)
+
+
+### Bug Fixes
+
+* cocreate/sendgrid syntax error ([067a543](https://github.com/CoCreate-app/CoCreateApi/commit/067a543ea84b8e763a7fdb2654ede9c0233da608))
+
 ## [1.2.8](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.7...v1.2.8) (2022-02-28)
 
 
