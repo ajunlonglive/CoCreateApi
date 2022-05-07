@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.10...v1.2.11) (2022-05-07)
+
+
+### Bug Fixes
+
+* update organization_Id to organization_id ([375dd9e](https://github.com/CoCreate-app/CoCreateApi/commit/375dd9e639f50ad8e776de9a6e58da9cd74be780))
+
 ## [1.2.10](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.9...v1.2.10) (2022-03-03)
 
 
