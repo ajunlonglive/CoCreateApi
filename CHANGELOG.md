@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.11...v1.2.12) (2022-05-09)
+
+
+### Bug Fixes
+
+* process.env.JWT_KEY ([fa0a94e](https://github.com/CoCreate-app/CoCreateApi/commit/fa0a94ef37ffd95bfdd0609c559a41f92cc7dd25))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.10...v1.2.11) (2022-05-07)
 
 
