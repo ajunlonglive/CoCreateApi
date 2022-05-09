@@ -36,7 +36,7 @@ module.exports.init = function(wsManager) {
 	// new CoCreateXXX(wsManager);
 	const permission = new ApiPermission();
 	wsManager.setPermission(permission)
-	const auth = new CoCreateAuth(config.jwttoken)
+	const auth = new CoCreateAuth(process.env.JWT_KEY || config.jwttoken)
 	wsManager.setAuth(auth)
 
 }
