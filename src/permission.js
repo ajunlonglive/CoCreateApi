@@ -33,7 +33,7 @@ class ApiPermission extends CoCreatePermission {
         room: null,
         host
       })
-      let data = await crud.readDocumentList({
+      let data = await crud.readDocuments({
         collection: "permissions",
         operator: {
           filters: [{
