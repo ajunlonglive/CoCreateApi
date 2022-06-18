@@ -1,3 +1,11 @@
+## [1.2.13](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.12...v1.2.13) (2022-06-18)
+
+
+### Bug Fixes
+
+* bump @cocreate/domain dependency ([4039b2b](https://github.com/CoCreate-app/CoCreateApi/commit/4039b2bd81be2d570237f3a2e23e28f6eaba3ff2))
+* renamed readDocumentList to readDocuments ([c22510d](https://github.com/CoCreate-app/CoCreateApi/commit/c22510d203ae08d2dafbbaf437255f75af603138))
+
 ## [1.2.12](https://github.com/CoCreate-app/CoCreateApi/compare/v1.2.11...v1.2.12) (2022-05-09)
 
 
